@@ -1,38 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1" />
-    <title>peachiestao</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Studio</title>
     <style>
-      body {
-        background-color: white;
-        color: black;
-      font-size: 18pt;
-      }
-      img {
-        width: 500px;
-      }
-      .center {
-        display: block;
-        justify-content: center;
-        text-align: center;
-        margin: auto 0;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .font {
-        font-size: 50pt;
-      }
-      .color{
-      color: black;
-      }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* Beige background */
+        }
+
+        .studio-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 800px;
+            background: url('creative digital studio.webp') no-repeat center/cover;
+        }
+
+        .hotspot {
+            position: absolute;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: transform 0.3s, border 0.3s;
+        }
+
+        .hotspot:hover {
+            transform: scale(1.1);
+            border: 2px solid #66cdaa; /* Light green when hovered */
+        }
+
+        .hotspot .tooltip {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        .hotspot:hover .tooltip {
+            display: block;
+        }
+
+        /* Specific hotspot positions */
+        .art-wall {
+            top: 10%;
+            left: 20%;
+            width: 10%;
+            height: 15%;
+        }
+
+        .workstation {
+            top: 30%;
+            left: 25%;
+            width: 15%;
+            height: 20%;
+        }
+
+        .piano {
+            top: 50%;
+            left: 15%;
+            width: 12%;
+            height: 10%;
+        }
+
+        .kitchen {
+            top: 70%;
+            left: 50%;
+            width: 20%;
+            height: 15%;
+        }
+
+        .window-view {
+            top: 20%;
+            left: 75%;
+            width: 15%;
+            height: 30%;
+        }
     </style>
-  </head>
-  <body>
-    <h1 class="color font center">Pipi</h1>
-    <p class="center"><a href="/">Meow?<a href="/">Meow!</a><a href="/">Meow.</a></p>
-    <img class="center" src="https://i.imgur.com/6Hbxirb.jpg"/>
-  </body>
+</head>
+<body>
+    <div class="studio-container">
+        <!-- Art Wall -->
+        <div class="hotspot art-wall">
+            <div class="tooltip">Art Gallery</div>
+            <a href="art.html" style="display: block; width: 100%; height: 100%;"></a>
+        </div>
+
+        <!-- Workstation -->
+        <div class="hotspot workstation">
+            <div class="tooltip">French Learning</div>
+            <a href="diary.html" style="display: block; width: 100%; height: 100%;"></a>
+        </div>
+
+        <!-- Piano -->
+        <div class="hotspot piano">
+            <div class="tooltip">Music</div>
+            <a href="music.html" style="display: block; width: 100%; height: 100%;"></a>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="hotspot kitchen">
+            <div class="tooltip">Recipes</div>
+            <a href="kitchen.html" style="display: block; width: 100%; height: 100%;"></a>
+        </div>
+
+        <!-- Window View -->
+        <div class="hotspot window-view">
+            <div class="tooltip">Thoughts</div>
+            <a href="french.html" style="display: block; width: 100%; height: 100%;"></a>
+        </div>
+    </div>
+</body>
 </html>
