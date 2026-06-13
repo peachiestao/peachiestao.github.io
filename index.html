@@ -59,19 +59,20 @@
 <body class="font-sans text-brand-primary min-h-screen flex flex-col justify-between">
 
     <!-- 1. Header -->
-    <header class="w-full max-w-6xl mx-auto px-6 py-6 flex justify-between items-center z-10">
-        <div class="text-2xl font-serif font-bold tracking-tight text-brand-primary">
-            T<span class="text-brand-accent">.</span>
+    <header class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex justify-between items-center z-10">
+        <div class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-brand-primary">
+            K<span class="text-brand-accent">.</span>
         </div>
-        <nav class="hidden md:flex space-x-8 text-sm font-medium text-brand-secondary">
+        
+        <nav class="flex space-x-4 sm:space-x-8 text-xs sm:text-sm font-semibold text-brand-secondary">
             <a href="#home" class="hover:text-brand-accent transition">Home</a>
             <a href="#skills" class="hover:text-brand-accent transition">Skills</a>
-            <a href="#about" class="hover:text-brand-accent transition">About Me</a>
         </nav>
+        
         <div>
-            <!-- PDF resume -->
-            <a href="#" class="inline-flex items-center gap-2 bg-brand-primary text-white text-xs font-semibold px-4 py-2.5 rounded-full hover:bg-brand-accent transition shadow-sm">
-                <i class="fa-solid fa-file-arrow-down"></i> Resume PDF
+            <a href="#" class="inline-flex items-center gap-1.5 sm:gap-2 bg-brand-primary text-white text-[11px] sm:text-xs font-semibold px-3 sm:px-4 py-2 sm:py-2.5 rounded-full hover:bg-brand-accent transition shadow-sm">
+                <i class="fa-solid fa-file-arrow-down"></i> 
+                <span>Resume PDF</span>
             </a>
         </div>
     </header>
