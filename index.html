@@ -61,19 +61,32 @@
     <!-- 1. Header -->
     <header class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex justify-between items-center z-10">
         <div class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-brand-primary">
-            K<span class="text-brand-accent">.</span>
+            K<span class="text-brand-accent">.</span>T<span class="text-brand-accent">
         </div>
         
         <nav class="flex space-x-4 sm:space-x-8 text-xs sm:text-sm font-semibold text-brand-secondary">
-            <a href="#home" class="hover:text-brand-accent transition">Home</a>
-            <a href="#skills" class="hover:text-brand-accent transition">Skills</a>
+            <a href="index.html" class="hover:text-brand-accent transition">Home</a>
+            <a href="projects.html" class="hover:text-brand-accent transition">Projects</a>
+            <a href="aboutme.html" class="hover:text-brand-accent transition">About Me</a>
         </nav>
         
-        <div>
-            <a href="#" class="inline-flex items-center gap-1.5 sm:gap-2 bg-brand-primary text-white text-[11px] sm:text-xs font-semibold px-3 sm:px-4 py-2 sm:py-2.5 rounded-full hover:bg-brand-accent transition shadow-sm">
+        <div class="relative inline-block text-left" id="resume-container">
+            <button id="resume-btn" class="inline-flex items-center gap-1.5 bg-brand-primary text-white text-xs font-semibold px-3.5 py-2 rounded-full hover:bg-brand-accent transition shadow-sm focus:outline-none">
                 <i class="fa-solid fa-file-arrow-down"></i> 
-                <span>Resume PDF</span>
-            </a>
+                <span class="hidden sm:inline">Resume</span> PDF 
+                <i class="fa-solid fa-chevron-down text-[10px] ml-0.5"></i>
+            </button>
+            <div id="resume-menu" class="hidden absolute right-0 mt-2 w-48 rounded-xl bg-white shadow-lg border border-brand-card/80 focus:outline-none z-50">
+                <div class="py-1">
+                    <a href="./Kathy_Tao_Resume_Accountant.pdf" target="_blank" class="flex items-center px-4 py-2.5 text-xs text-brand-primary hover:bg-brand-card transition font-semibold">
+                        <i class="fa-solid fa-calculator mr-2.5 text-brand-accent"></i> Accountant Version
+                    </a>
+                    <a href="./Kathy_Tao_Resume_Analyst.pdf" target="_blank" class="flex items-center px-4 py-2.5 text-xs text-brand-primary hover:bg-brand-card transition font-semibold border-t border-brand-card/30">
+                        <i class="fa-solid fa-chart-line mr-2.5 text-brand-accent"></i> Analyst Version
+                    </a>
+                    <a href="./Kathy_Tao_Resume_Consultant.pdf" target="_blank" class="flex items-center px-4 py-2.5 text-xs text-brand-primary hover:bg-brand-card transition font-semibold border-t border-brand-card/30">
+                        <i class="fa-solid fa-handshake mr-2.5 text-brand-accent"></i> Consultant Version
+                    </a>
         </div>
     </header>
 
@@ -90,7 +103,7 @@
                     Kathy Tao
                 </h1>
                 <p class="text-xl md:text-2xl font-medium text-brand-secondary tracking-wide">
-                    General Accountant / <span class="text-brand-accent">Financial Automation</span>
+                    Financial Analyst & Solutions Specialist
                 </p>
             </div>
 
@@ -102,7 +115,7 @@
             </div>
 
             <p class="text-sm md:text-base text-brand-secondary leading-relaxed max-w-xl">
-                As a <strong>General Accountant</strong>, I combine rigorous financial compliance with a passion for process automation. I excel at using <strong>Python</strong> to streamline daily operations, successfully converting repetitive manual reconciliations into high-efficiency automated workflows.
+                A trilingual professional integrating <strong>Full-Cycle Accounting</strong>, <strong>Data Science</strong>, and <strong>Client Advisory</strong> to solve complex business problems and optimize financial operations.
             </p>
 
             <!-- medias -->
@@ -137,16 +150,23 @@
         
         <div class="space-y-8 text-sm md:text-base">
             <div>
-                <h3 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">Hard Skills</h3>
+                <h3 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">Financial & Compliance</h3>
                 <p class="text-brand-secondary leading-relaxed tracking-wide">
-                    Financial Reporting | AP and AR | General Ledger | Reconciliations | Month End Closing | Tax Compliance | Process Automation | Python | SQL | Advanced Excel
+                    Full-Cycle Accounting | Month-End Closing | Tax Compliance (CRA T1/T2) | Reconciliations | Financial Reporting | General Ledger (GL) Maintenance
                 </p>
             </div>
             
             <div>
-                <h3 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">Soft Skills</h3>
+                <h3 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">Data & Automation</h3>
                 <p class="text-brand-secondary leading-relaxed tracking-wide">
-                    Trilingual | Collaborative Communication | Analytical Thinking | Creative Designing
+                    Python (Pandas/NumPy) | SQL Database Analytics | Statistical Analysis (R) | Process Automation | Financial Risk Modeling | Cloud Infrastructure Deployment
+                </p>
+            </div>
+
+             <div>
+                <h3 class="text-xs uppercase tracking-widest text-brand-accent font-bold mb-3">Business & Advisory</h3>
+                <p class="text-brand-secondary leading-relaxed tracking-wide">
+                    Trilingual Consultation (EN/FR/CN) | Client Relationship Management (CRM) | Stakeholder Communication | Account Management | FCross-Functional Team Leadership
                 </p>
             </div>
         </div>
@@ -157,9 +177,6 @@
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-brand-secondary space-y-4 md:space-y-0">
             <div>
                 © 2026 Kathy Tao. Built with Jekyll & Tailwind CSS. Hosted on GitHub Pages.
-            </div>
-            <div class="flex space-x-6">
-                <a href="#home" class="hover:text-brand-accent transition">Back to Top</a>
             </div>
         </div>
     </footer>
