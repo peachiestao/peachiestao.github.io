@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Kathy Tao | Professional Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FAF8F5',       
+                            card: '#F4F1EA',     
+                            primary: '#1A2E3B',  
+                            secondary: '#4A5859',
+                            accent: '#2D6A4F'   
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #FAF8F5;
+            background-image: radial-gradient(rgba(74, 88, 89, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF8F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D5CFC5;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-primary min-h-screen flex flex-col justify-between">
+
+    <!-- 1. Header  -->
+    <header class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex justify-between items-center z-10">
+        <!-- Logo -->
+        <div class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-brand-primary flex-1 text-left">
+            K<span class="text-brand-accent">.</span>T
+        </div>
+        
+        <nav class="flex space-x-4 sm:space-x-8 text-xs sm:text-sm font-semibold text-brand-secondary">
+            <a href="index.html" class="hover:text-brand-accent transition">Home</a>
+            <a href="projects.html" class="text-brand-accent transition">Projects</a>
+            <a href="aboutme.html" class="hover:text-brand-accent transition">About Me</a>
+        </nav>
+        
+        <div class="flex-1 text-right hidden sm:block"></div>
+    </header>
+
+    <div class="flex-grow max-w-4xl w-full mx-auto px-6 py-12 md:py-16">
+        
+        <!-- header -->
+        <div class="mb-16 space-y-4">
+            <h1 class="text-3xl md:text-5xl font-serif font-bold tracking-tight text-brand-primary">
+                Technology and Design Projects
+            </h1>
+        </div>
+
+        <div class="space-y-12">
+
+            <!-- 1. Data Analyst  -->
+            <div class="space-y-2">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-brand-card pb-1">
+                    <h3 class="text-base md:text-lg font-bold text-brand-primary">
+                        Data Analyst <span class="font-normal text-brand-secondary">| Banking Credit Approval Predictor</span>
+                    </h3>
+                    <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap">Sept. 2025 - Dec. 2025</span>
+                </div>
+                <div class="text-xs text-brand-secondary italic">
+                    University of Ottawa — Course DTI 5126 Applied Data Science
+                </div>
+                <div class="text-xs font-bold uppercase tracking-wider text-brand-accent">
+                     Python • XGBoost & K-Means • Credit Risk Underwriting
+                </div>
+                <ul class="list-disc list-inside text-sm text-brand-secondary space-y-1.5 pl-2">
+                    <li>Processed UCI Credit dataset using median/mode imputation and 99th-percentile outlier capping to build a robust model.</li>
+                    <li>Evaluated Logistic Regression baseline against XGBoost (achieving 88.4% accuracy), using K-Means to profile risk groups.</li>
+                </ul>
+                <div class="mt-4 pt-1">
+                    <a href="./DTI5126_FinalReport.pdf" target="_blank" class="inline-flex items-center gap-2 bg-brand-card hover:bg-brand-secondary/10 text-brand-primary text-xs font-medium px-3 py-1.5 rounded-lg border border-brand-secondary/20 transition shadow-sm group">
+                        <i class="fa-solid fa-file-pdf text-red-600 text-sm group-hover:scale-105 transition"></i>
+                        <span class="hover:underline">DTI5126_FinalReport.pdf</span>
+                        <span class="text-brand-secondary/60 text-[10px]">(IEEE Format Paper)</span>
+                    </a>
+            </div>
+
+
+
+            <!-- 2. 股票风险预测与部署 -->
+            <div class="space-y-2">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-brand-card pb-1">
+                    <h3 class="text-base md:text-lg font-bold text-brand-primary">
+                        Cloud Deployment Analyst <span class="font-normal text-brand-secondary">| Equity Risk Forecasting App</span>
+                    </h3>
+                    <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap">Sept. 2025 - Dec. 2025</span>
+                </div>
+                <div class="text-xs text-brand-secondary italic">
+                    University of Ottawa — Course DTI 6302 Machine Learning in Applied Data Science
+                </div>
+                <div class="text-xs font-bold uppercase tracking-wider text-brand-accent">
+                     Python • Time-Series Modeling • Cloud Infrastructure • Performance Monitoring
+                </div>
+                <ul class="list-disc list-inside text-sm text-brand-secondary space-y-1.5 pl-2">
+                    <li>Modeled historical asset data to forecast market volatility trends and financial risk parameters.</li>
+                    <li>Deployed the forecasting application on cloud infrastructure and configured system performance monitoring.</li>
+                </ul>
+            </div>
+
+            <!-- 3. 原住民气候平台 -->
+            <div class="space-y-2">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-brand-card pb-1">
+                    <h3 class="text-base md:text-lg font-bold text-brand-primary">
+                        Frontend & UI Specialist <span class="font-normal text-brand-secondary">| National Indigenous Climate Compass</span>
+                    </h3>
+                    <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap">Oct. 2025 - Feb. 2026</span>
+                </div>
+                <div class="text-xs text-brand-secondary italic">
+                    University of Ottawa — Graduate Capstone Project
+                </div>
+                <div class="text-xs font-bold uppercase tracking-wider text-brand-accent">
+                    # HTML5 & CSS3 • JavaScript • Cloud Storage • Functional Specs
+                </div>
+                <ul class="list-disc list-inside text-sm text-brand-secondary space-y-1.5 pl-2">
+                    <li>Contributed to backend data storage optimization and responsive UI enhancements for the community prototype.</li>
+                    <li>Translated complex stakeholder requirements into functional design specifications to improve platform accessibility.</li>
+                </ul>
+            </div>
+
+            <!-- 4. 宠物店订阅网 -->
+            <div class="space-y-2">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-brand-card pb-1">
+                    <h3 class="text-base md:text-lg font-bold text-brand-primary">
+                        Product Solutions Developer <span class="font-normal text-brand-secondary">| Pet Grooming Subscription Web</span>
+                    </h3>
+                    <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap">May 2025 - July 2025</span>
+                </div>
+                <div class="text-xs text-brand-secondary italic">
+                    University of Ottawa — E-Business Design Project
+                </div>
+                <div class="text-xs font-bold uppercase tracking-wider text-brand-accent">
+                    # Wix Velo • Subscription Architecture • E-Commerce • CRM Integration
+                </div>
+                <ul class="list-disc list-inside text-sm text-brand-secondary space-y-1.5 pl-2">
+                    <li>Designed and built a functional end-to-end service subscription website for a local pet grooming business.</li>
+                    <li>Configured automated client onboarding workflows, recurring billing schedules, and backend database tracking.</li>
+                </ul>
+            </div>
+
+            <!-- 5. AWS静态网页托管 -->
+            <div class="space-y-2">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-brand-card pb-1">
+                    <h3 class="text-base md:text-lg font-bold text-brand-primary">
+                        Cloud Systems Specialist <span class="font-normal text-brand-secondary">| Multi-Tier Static Web Hosting</span>
+                    </h3>
+                    <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap">Jan. 2025 - Apr. 2025</span>
+                </div>
+                <div class="text-xs text-brand-secondary italic">
+                    University of Ottawa — Cloud Computing Infrastructure Project
+                </div>
+                <div class="text-xs font-bold uppercase tracking-wider text-brand-accent">
+                    # AWS (S3, CloudFront) • Route 53 • Cloud Storage • Security Protocols
+                </div>
+                <ul class="list-disc list-inside text-sm text-brand-secondary space-y-1.5 pl-2">
+                    <li>Architected and deployed a highly available, secure static website hosting solution utilizing institutional cloud storage.</li>
+                    <li>Configured global content delivery network (CDN) routing, custom domain mapping, and SSL access controls.</li>
+                </ul>
+            </div>
+
+            <!-- 6. 电影推荐系统 -->
+            <div class="space-y-2">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-brand-card pb-1">
+                    <h3 class="text-base md:text-lg font-bold text-brand-primary">
+                        Data Engineer <span class="font-normal text-brand-secondary">| Collaborative Movie Recommender System</span>
+                    </h3>
+                    <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap">Jan. 2025 - Apr. 2025</span>
+                </div>
+                <div class="text-xs text-brand-secondary italic">
+                    University of Ottawa — Data Mining and Analytics Project
+                </div>
+                <div class="text-xs font-bold uppercase tracking-wider text-brand-accent">
+                    # Python • Collaborative Filtering • Dataset Parsing • Analytics Pipelines
+                </div>
+                <ul class="list-disc list-inside text-sm text-brand-secondary space-y-1.5 pl-2">
+                    <li>Developed a matrix-factorization recommendation engine to process and clean multi-dimensional user rating matrices.</li>
+                    <li>Evaluated algorithmic filtering accuracy and prediction thresholds to optimize real-time content delivery.</li>
+                </ul>
+            </div>
+
+        </div>
+
+</body>
+</html>
