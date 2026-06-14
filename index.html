@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,9 +58,9 @@
 <body class="font-sans text-brand-primary min-h-screen flex flex-col justify-between">
 
     <!-- 1. Header -->
-    <header class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex justify-between items-center z-10">
-        <div class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-brand-primary">
-            K<span class="text-brand-accent">.</span>T<span class="text-brand-accent">
+    <header class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between z-10">
+        <div class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-brand-primary flex-1 text-left">
+            K<span class="text-brand-accent">.</span>T
         </div>
         
         <nav class="flex space-x-4 sm:space-x-8 text-xs sm:text-sm font-semibold text-brand-secondary">
@@ -69,27 +68,10 @@
             <a href="projects.html" class="hover:text-brand-accent transition">Projects</a>
             <a href="aboutme.html" class="hover:text-brand-accent transition">About Me</a>
         </nav>
-        
-        <div class="relative inline-block text-left" id="resume-container">
-            <button id="resume-btn" class="inline-flex items-center gap-1.5 bg-brand-primary text-white text-xs font-semibold px-3.5 py-2 rounded-full hover:bg-brand-accent transition shadow-sm focus:outline-none">
-                <i class="fa-solid fa-file-arrow-down"></i> 
-                <span class="hidden sm:inline">Resume</span> PDF 
-                <i class="fa-solid fa-chevron-down text-[10px] ml-0.5"></i>
-            </button>
-            <div id="resume-menu" class="hidden absolute right-0 mt-2 w-48 rounded-xl bg-white shadow-lg border border-brand-card/80 focus:outline-none z-50">
-                <div class="py-1">
-                    <a href="./Kathy_Tao_Resume_Accountant.pdf" target="_blank" class="flex items-center px-4 py-2.5 text-xs text-brand-primary hover:bg-brand-card transition font-semibold">
-                        <i class="fa-solid fa-calculator mr-2.5 text-brand-accent"></i> Accountant Version
-                    </a>
-                    <a href="./Kathy_Tao_Resume_Analyst.pdf" target="_blank" class="flex items-center px-4 py-2.5 text-xs text-brand-primary hover:bg-brand-card transition font-semibold border-t border-brand-card/30">
-                        <i class="fa-solid fa-chart-line mr-2.5 text-brand-accent"></i> Analyst Version
-                    </a>
-                    <a href="./Kathy_Tao_Resume_Consultant.pdf" target="_blank" class="flex items-center px-4 py-2.5 text-xs text-brand-primary hover:bg-brand-card transition font-semibold border-t border-brand-card/30">
-                        <i class="fa-solid fa-handshake mr-2.5 text-brand-accent"></i> Consultant Version
-                    </a>
-        </div>
-    </header>
 
+         <div class="flex-1 text-right hidden sm:block"></div>
+        
+    </header>
 
     <div class="flex-grow flex flex-col justify-center"></div>
 
@@ -120,13 +102,13 @@
 
             <!-- medias -->
             <div class="flex items-center space-x-4 pt-2 mb-4">
-                    <a href="mailto:your_email@domain.com" class="w-10 h-10 rounded-full bg-brand-card flex items-center justify-center text-brand-primary hover:bg-brand-accent hover:text-white transition shadow-sm" title="Email Me">
+                    <a href="mailto:taokathy20@gmail.com" class="w-10 h-10 rounded-full bg-brand-card flex items-center justify-center text-brand-primary hover:bg-brand-accent hover:text-white transition shadow-sm" title="Email Me">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                     <a href="https://github.com/peachiestao" target="_blank" class="w-10 h-10 rounded-full bg-brand-card flex items-center justify-center text-brand-primary hover:bg-brand-accent hover:text-white transition shadow-sm" title="My GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-brand-card flex items-center justify-center text-brand-primary hover:bg-brand-accent hover:text-white transition shadow-sm" title="My LinkedIn">
+                    <a href="https://www.linkedin.com/in/kathy-tao-446835245/" class="w-10 h-10 rounded-full bg-brand-card flex items-center justify-center text-brand-primary hover:bg-brand-accent hover:text-white transition shadow-sm" title="My LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
