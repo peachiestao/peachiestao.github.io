@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Kathy Tao | Professional Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FAF8F5',       
+                            card: '#F4F1EA',     
+                            primary: '#1A2E3B',  
+                            secondary: '#4A5859',
+                            accent: '#2D6A4F'   
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #FAF8F5;
+            background-image: radial-gradient(rgba(74, 88, 89, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF8F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D5CFC5;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-primary min-h-screen flex flex-col justify-between">
+
+    <!-- 1. Header  -->
+    <header class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex justify-between items-center z-10">
+        <!-- Logo -->
+        <div class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-brand-primary flex-1 text-left">
+            K<span class="text-brand-accent">.</span>T
+        </div>
+        
+        <nav class="flex space-x-4 sm:space-x-8 text-xs sm:text-sm font-semibold text-brand-secondary">
+            <a href="index.html" class="hover:text-brand-accent transition">Home</a>
+            <a href="projects.html" class="hover:text-brand-accent transition">Projects</a>
+            <a href="aboutme.html" class="ext-brand-accent transition">About Me</a>
+        </nav>
+        
+        <div class="flex-1 text-right hidden sm:block"></div>
+    </header>
+
+    <div class="flex-grow max-w-4xl w-full mx-auto px-6 py-12 md:py-16">
+        
+        <!-- ================= INTRO SUMMARY ================= -->
+        <div class="mb-16 space-y-4">
+            <h1 class="text-3xl md:text-5xl font-serif font-bold tracking-tight text-brand-primary">
+                A blend of Logic and Creation
+            </h1>
+        </div>
+
+        <!-- ================= 1. PROFESSIONAL EXPERIENCE ================= -->
+        <section class="space-y-8">
+            <h2 class="text-xl font-bold text-brand-primary border-b border-brand-card pb-2">
+                Professional Milestones
+            </h2>
+            
+            <!-- Cards Container: 3 Spacious Modular UI Blocks -->
+            <div class="space-y-8">
+                
+                <!-- Card 1: RA Centre (General Accountant) -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl border border-brand-secondary/10 shadow-sm hover:shadow-md transition duration-300 space-y-4">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                        <div>
+                            <h3 class="text-lg font-extrabold text-brand-primary">General Accountant</h3>
+                            <p class="text-sm font-semibold text-brand-accent mt-0.5">Recreation Association of the Public Service of Canada</p>
+                        </div>
+                        <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap md:bg-brand-card md:px-3 md:py-1 md:rounded-full">May 2022 – Sept. 2024</span>
+                    </div>
+                    <div class="text-xs text-brand-secondary/80 italic">
+                        Ottawa, ON | Large multi-service complex serving over 22,000 members and public service employees.
+                    </div>
+                    
+                    <ul class="list-disc list-inside text-sm text-brand-secondary space-y-2.5 pl-1 leading-relaxed">
+                        <li><strong>Full-Cycle Financial Operations:</strong> Took full ownership of corporate general ledger (GL) reconciliations and multicurrency cash accounts, ensuring absolute accuracy and structural compliance.</li>
+                        <li><strong>Data & Process Automation:</strong> Built localized <span class="text-brand-accent">Python scripting pipelines</span> to clean and cross-verify transactional databases against bank ledgers, transforming multi-day manual checks into a one-click automated run.</li>
+                        <li><strong>Variance Analysis & Advisory:</strong> Performed disciplined monthly variance analysis and budget tracking; acted as a financial consultant to regional program managers to resolve discrepancies and optimize resource allocation.</li>
+                        <li><strong>Controls & Audit Support:</strong> Overseered internal accounting controls, managed AP/AR aging ledgers, and streamlined year-end audit files in strict accordance with standard Canadian accounting and tax regulations.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Softron (Office Supervisor) -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl border border-brand-secondary/10 shadow-sm hover:shadow-md transition duration-300 space-y-4">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                        <div>
+                            <h3 class="text-lg font-extrabold text-brand-primary">Office Supervisor</h3>
+                            <p class="text-sm font-semibold text-brand-accent mt-0.5">Softron Tax</p>
+                        </div>
+                        <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap md:bg-brand-card md:px-3 md:py-1 md:rounded-full">Jan. 2022 – May 2022</span>
+                    </div>
+                    <div class="text-xs text-brand-secondary/80 italic">
+                        Ottawa, ON | Established financial services firm operating 30+ locations across Ontario for over 40 years.
+                    </div>
+                    
+                    <ul class="list-disc list-inside text-sm text-brand-secondary space-y-2.5 pl-1 leading-relaxed">
+                        <li><strong>Leadership & Operations:</strong> Directed daily operations for high-volume tax offices; supervised and coached a team of 4 preparers to securely process 1,000+ complex tax returns per season.</li>
+                        <li><strong>Trilingual Client Advisory:</strong> Delivered tailored tax consulting and structural financial planning to diverse individual and corporate clients in fluent <span class="text-brand-accent">English, French, and Chinese</span>.</li>
+                        <li><strong>Quality Assurance Auditing:</strong> Executed meticulous pre-submission quality audits of corporate financial folders, successfully minimizing client audit exposure and file preparation errors.</li>
+                        <li><strong>CRA Liaison & Dispute Resolution:</strong> Acted as the senior resolution specialist to handle complex audit reviews and negotiate client disputes directly with the Canada Revenue Agency (CRA).</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Softron (Tax Accountant Co-op) -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl border border-brand-secondary/10 shadow-sm hover:shadow-md transition duration-300 space-y-4">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2">
+                        <div>
+                            <h3 class="text-lg font-extrabold text-brand-primary">Tax Accountant (Co-op)</h3>
+                            <p class="text-sm font-semibold text-brand-accent mt-0.5">Softron Tax</p>
+                        </div>
+                        <span class="text-xs md:text-sm text-brand-secondary font-semibold whitespace-nowrap md:bg-brand-card md:px-3 md:py-1 md:rounded-full">Jan. 2020 – Apr. 2020</span>
+                    </div>
+                    <div class="text-xs text-brand-secondary/80 italic">
+                        Ottawa, ON | Established financial services firm operating 30+ locations across Ontario for over 40 years.
+                    </div>
+                    
+                    <ul class="list-disc list-inside text-sm text-brand-secondary space-y-2.5 pl-1 leading-relaxed">
+                        <li><strong>Taxation Compliance:</strong> Prepared and filed 300+ personal (T1) and corporate (T2) tax returns, maintaining absolute accuracy under condensed statutory timelines and CRA regulations.</li>
+                        <li><strong>Intake Consulting & Data Mapping:</strong> Managed initial client interviews to extract financial records, identify deductions, and structure client folders for optimal tax write-offs.</li>
+                        <li><strong>Exemplary Career Growth:</strong> Demonstrated stellar technical competency and relationship-building skills, earning a direct promotion to Office Supervisor following the co-op term.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= PERSONAL INTERESTS SECTION ================= -->
+                <section class="space-y-6 pt-4">
+                    <h2 class="text-xl font-bold text-brand-primary border-b border-brand-card pb-2">
+                        Personal Interests
+                    </h2>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pt-2 text-sm text-brand-secondary font-semibold">
+                        <div class="flex items-center gap-2 bg-brand-card/50 p-3 rounded-xl border border-brand-secondary/5">
+                            <span>🌲</span> Hiking
+                        </div>
+                        <div class="flex items-center gap-2 bg-brand-card/50 p-3 rounded-xl border border-brand-secondary/5">
+                            <span>🏃‍♀️</span> Running
+                        </div>
+                        <div class="flex items-center gap-2 bg-brand-card/50 p-3 rounded-xl border border-brand-secondary/5">
+                            <span>🎹</span> Piano & Ukulele
+                        </div>
+                        <div class="flex items-center gap-2 bg-brand-card/50 p-3 rounded-xl border border-brand-secondary/5">
+                            <span>🎨</span> Landscape Painting
+                        </div>
+                        <div class="flex items-center gap-2 bg-brand-card/50 p-3 rounded-xl border border-brand-secondary/5">
+                            <span>🌿</span> Botany & Plants
+                        </div>
+                        <div class="flex items-center gap-2 bg-brand-card/50 p-3 rounded-xl border border-brand-secondary/5">
+                            <span>🍞</span> Baking
+                        </div>
+                    </div>
+                </section>
+
+    </main>
+
+
+</body>
+</html>
